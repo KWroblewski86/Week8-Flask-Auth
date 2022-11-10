@@ -46,7 +46,8 @@ class Workout(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False)
 
 
-    def __init__(self, set, repetitions, weight_used, date_created, user_id):
+    def __init__(self, id, set, repetitions, weight_used, date_created, user_id):
+        self.id = id
         self.set = set
         self.repetitions = repetitions
         self.weight_used = weight_used

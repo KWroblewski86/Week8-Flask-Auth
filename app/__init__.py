@@ -33,5 +33,4 @@ login.init_app(app)
 
 login.login_view = 'auth.logMeIn'
 
-from . import routes
 from . import models

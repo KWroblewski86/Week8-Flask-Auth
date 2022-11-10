@@ -38,6 +38,7 @@ class User(db.Model, UserMixin):
 
 
 class Workout(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
     set = db.Column(db.Integer, default=0)
     repetitions = db.Column(db.Integer, default=0)
     weight_used = db.Column(db.Integer, default=0)
